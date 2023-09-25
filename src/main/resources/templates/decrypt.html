@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Trisemus File Decryption</title>
+</head>
+<body style="background-color: darkolivegreen;">
+<div align="center" style="background-color: green;">
+<h2>Дешифрование файла с использованием шифра Трисемуса</h2>
+
+<form action="/decrypt-file" method="post" enctype="multipart/form-data">
+  <label for="file">Выберите файл для дешифрования:</label>
+  <input type="file" id="file" name="file"><br><br>
+
+  <label for="keyword">Ключ:</label><br>
+  <input type="text" id="keyword" name="keyword"><br><br>
+
+  <input type="submit" value="Расшифровать"><br><br>
+</form><br><br>
+</div>
+</body>
+</html>

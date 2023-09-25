@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Trisemus Cipher</title>
+</head>
+<body style="background-color: darkolivegreen;">
+  <div align="center" style="background-color: green;">
+    <h2>Шифр Трисемуса</h2>
+
+    <!-- Форма для шифрования -->
+    <h4>Шифрование</h4>
+    <form action="/encrypt" method="post">
+      <label for="textToEncrypt">Текст для шифрования:</label><br>
+      <textarea name="text" id="textToEncrypt" rows="4" cols="50"></textarea><br><br>
+
+      <label for="encryptKeyword">Ключ:</label><br>
+      <input type="text" id="encryptKeyword" name="keyword"><br><br>
+
+      <input type="submit" value="Зашифровать">
+    </form>
+
+    <br><br>
+
+    <!-- Форма для дешифрования -->
+    <h4>Дешифрование</h4>
+    <form action="/decrypt" method="post">
+      <label for="textToDecrypt">Текст для дешифрования:</label><br>
+      <textarea name="text" id="textToDecrypt" rows="4" cols="50"></textarea><br><br>
+
+      <label for="decryptKeyword">Ключ:</label><br>
+      <input type="text" id="decryptKeyword" name="keyword"><br><br>
+
+      <input type="submit" value="Расшифровать">
+    </form><br><br>
+
+    <button onclick="location.href='http://localhost:8080/encrypt-form'">Открыть форму шифрования через файл</button><br><br>
+
+    <button onclick="location.href='http://localhost:8080/decrypt-form'">Открыть форму дешифрования через файл</button><br><br>
+
+    Выполнил студен группы РИС-21-1б:<br>
+    Абдуллоев Бахтовар Холикназарович<br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+  </div>
+</body>
+</html>
